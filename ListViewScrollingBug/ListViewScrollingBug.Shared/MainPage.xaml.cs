@@ -26,14 +26,8 @@ namespace ListViewScrollingBug
         public MainPage()
         {
             InitializeComponent();
-
-            //Items3 = Feed.Async(GetItems).AsListFeed();
-            //listview.ItemsSource = Items;
-            //feedview.Source = Items3;
-
             DataContext = this;
         }
-        public string test { get; } = "allo";
         public List<Item> Items { get; } = new List<Item>()
         {
             new Item("msg1"),
@@ -56,61 +50,11 @@ namespace ListViewScrollingBug
             new Item("msg3"),
             new Item("msg4"),
             new Item("msg5"),
+            new Item("msg10000"),
+            new Item("msg2"),
+            new Item("msg3"),
+            new Item("msg4"),
+            new Item("msg5"),
         };
-
-        //public IListFeed<Item> Items2 => ListFeed<Item>.Async(ct => new System.Threading.Tasks.ValueTask<IImmutableList<Item>>(new List<Item>()
-        //{
-        //    new Item("msg1"),
-        //    new Item("msg2"),
-        //    new Item("msg3"),
-        //    new Item("msg4"),
-        //    new Item("msg5"),
-        //    new Item("msg10"),
-        //    new Item("msg2"),
-        //    new Item("msg3"),
-        //    new Item("msg4"),
-        //    new Item("msg5"),
-        //    new Item("msg100"),
-        //    new Item("msg2"),
-        //    new Item("msg3"),
-        //    new Item("msg4"),
-        //    new Item("msg5"),
-        //    new Item("msg1000"),
-        //    new Item("msg2"),
-        //    new Item("msg3"),
-        //    new Item("msg4"),
-        //    new Item("msg5"),
-        //}.ToImmutableList()));
-
-        public IListState<Item> _stateItems3 => ListState<Item>.Async(this, async ct => await GetItems());
-
-        public IListFeed<Item> Items3 => _stateItems3;
-
-        private ValueTask<IImmutableList<Item>> GetItems()
-        {
-            return new ValueTask<IImmutableList<Item>>(new List<Item>()
-            {
-                new Item("msg1"),
-                new Item("msg2"),
-                new Item("msg3"),
-                new Item("msg4"),
-                new Item("msg5"),
-                new Item("msg10"),
-                new Item("msg2"),
-                new Item("msg3"),
-                new Item("msg4"),
-                new Item("msg5"),
-                new Item("msg100"),
-                new Item("msg2"),
-                new Item("msg3"),
-                new Item("msg4"),
-                new Item("msg5"),
-                new Item("msg1000"),
-                new Item("msg2"),
-                new Item("msg3"),
-                new Item("msg4"),
-                new Item("msg5"),
-            }.ToImmutableList());
-        }
     }
 }

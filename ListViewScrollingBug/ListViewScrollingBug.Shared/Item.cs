@@ -8,11 +8,9 @@ namespace ListViewScrollingBug
     {
         internal Item(string content)
         {
-            Id = Guid.NewGuid().ToString();
             Content = content;
         }
 
-        public string Id { get; set; }  
         public string Content { get; set; }
     }
 }
