@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "ListViewScrollingBug.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}

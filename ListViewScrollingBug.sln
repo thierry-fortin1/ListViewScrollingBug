@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32708.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ListViewScrollingBug.Shared", "ListViewScrollingBug\ListViewScrollingBug.Shared\ListViewScrollingBug.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{F29344DF-ED6E-4661-A8A5-D211453DA1DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewScrollingBug.Mobile", "ListViewScrollingBug\ListViewScrollingBug.Mobile\ListViewScrollingBug.Mobile.csproj", "{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewScrollingBug.Windows", "ListViewScrollingBug\ListViewScrollingBug.Windows\ListViewScrollingBug.Windows.csproj", "{3038EF49-71D2-4F6A-B31F-4D46D437C187}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|arm64 = Debug|arm64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|arm64 = Release|arm64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|arm64.Build.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|arm64.Deploy.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|arm64.ActiveCfg = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|arm64.Build.0 = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|arm64.Deploy.0 = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|x64.Build.0 = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|x64.Deploy.0 = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|x86.Build.0 = Release|Any CPU
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B}.Release|x86.Deploy.0 = Release|Any CPU
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|Any CPU.Build.0 = Debug|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|arm64.ActiveCfg = Debug|arm64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|arm64.Build.0 = Debug|arm64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|arm64.Deploy.0 = Debug|arm64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|x64.ActiveCfg = Debug|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|x64.Build.0 = Debug|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|x64.Deploy.0 = Debug|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|x86.ActiveCfg = Debug|x86
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|x86.Build.0 = Debug|x86
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Debug|x86.Deploy.0 = Debug|x86
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|Any CPU.ActiveCfg = Release|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|Any CPU.Build.0 = Release|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|Any CPU.Deploy.0 = Release|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|arm64.ActiveCfg = Release|arm64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|arm64.Build.0 = Release|arm64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|arm64.Deploy.0 = Release|arm64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|x64.ActiveCfg = Release|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|x64.Build.0 = Release|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|x64.Deploy.0 = Release|x64
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|x86.ActiveCfg = Release|x86
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|x86.Build.0 = Release|x86
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C98D95F-4CC9-4B3C-A2FA-80479733A46B} = {F29344DF-ED6E-4661-A8A5-D211453DA1DF}
+		{3038EF49-71D2-4F6A-B31F-4D46D437C187} = {F29344DF-ED6E-4661-A8A5-D211453DA1DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F65E95D1-3163-40D6-8FBB-D28739EAC9E6}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ListViewScrollingBug\ListViewScrollingBug.Shared\ListViewScrollingBug.Shared.projitems*{3038ef49-71d2-4f6a-b31f-4d46d437c187}*SharedItemsImports = 5
+		ListViewScrollingBug\ListViewScrollingBug.Shared\ListViewScrollingBug.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		ListViewScrollingBug\ListViewScrollingBug.Shared\ListViewScrollingBug.Shared.projitems*{8c98d95f-4cc9-4b3c-a2fa-80479733a46b}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
