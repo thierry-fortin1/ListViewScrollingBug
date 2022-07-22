@@ -8,11 +8,11 @@
       xmlns:utu="using:Uno.Toolkit.UI"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.Resources>
-        <DataTemplate x:Name="ListViewTemplate">
+    <!--<Page.Resources>
+        <DataTemplate x:Name="templatetemplate">
             <TextBlock Text="{Binding Content}" />
         </DataTemplate>
-    </Page.Resources>
+    </Page.Resources>-->
     
     <Grid>
         <Grid.ColumnDefinitions>
@@ -21,13 +21,13 @@
         </Grid.ColumnDefinitions>
 
         <Grid>
-            <ListView ItemsSource="{Binding Items}"
-                      ItemTemplate="{StaticResource ListViewTemplate}" />
+            <ListView ItemsSource="{Binding Items}" />
+            <!--ItemTemplate="{StaticResource test}"-->
         </Grid>
 
         <utu:AutoLayout Grid.Column="1">
-            <ListView ItemsSource="{Binding Items}"
-                      ItemTemplate="{StaticResource ListViewTemplate}" />
+            <ListView ItemsSource="{Binding Items}" />
+            <!--ItemTemplate="{StaticResource test}"--> 
         </utu:AutoLayout>
     </Grid>
     
